@@ -1,5 +1,93 @@
+/* regole generali */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* fine regole generali */
+
+
+
+/* debug */
+.debug {
+    height: 500px;
+}
+
+header.debug {
+    height: 100px;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    border: 5px solid black;
+}
+
+#piani .container {
+    border-color: rgb(0, 119, 255);
+}
+
+#features .container {
+    border-color: rgb(98, 0, 255);
+}
+
+#clients {
+    background-color: rgb(98, 9, 43);
+}
+
+#cta .container {
+    border-color: rgb(98, 9, 43);
+}
+
+#faq .container {
+    border-color: rgb(255, 0, 179);
+}
+
+footer .container {
+    border-color: white;
+}
+/* fine debug */
+
+
+
+/* regole header */
+header {
+    padding: 0 10px;
+}
+
+header .container {
+    width: 98%;
+    margin: 0 auto;
+}
+/* fine regole header */
+
+
+
+/* regole jumbotron */
+#jumbotron {
+    background-color: rgb(180, 208,	231);
+}
+
+#jumbotron .container {
+    width: 80%;
+    margin: 0 auto;
+}
+/* fine regole jumbotron */
+
+
+
+/* regole main */
+main .container {
+    width: 65%;
+    margin: 0 auto;
+}
+/* fine regole main */
+
+
+
+/* regole footer */
+footer {
+    background-color: black;
+    padding: 100px 17% 40px 10%;
+}
+/* fine regole footer */
