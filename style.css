@@ -26,6 +26,9 @@
 
     header nav.right, header nav.left {
         background-color: blue;
+    }
+
+    header a {
         color: white;
     }
 
