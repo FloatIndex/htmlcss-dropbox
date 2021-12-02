@@ -8,6 +8,12 @@
 
 
 
+/* regole comuni */
+a {
+    display: inline-block;
+}
+/* fine regole comuni */
+
 /* debug */
 .debug {
     height: 500px;
@@ -20,16 +26,28 @@
 }
 
     /* header */
-    header.debug {
-        height: 100px;
-    }
-
     header nav.right, header nav.left {
         background-color: blue;
     }
 
     header a {
         color: white;
+    }
+
+    /* jumbotron */
+    #jumbotron h1 {
+        height: 180px;
+        background-color: grey;
+    }
+
+    #jumbotron .txt, #jumbotron .img {
+        background-color: grey;
+    }
+
+    #jumbotron .btn {
+        width: 150px;
+        height: 30px;
+        background-color: blue;
     }
 
     /* main */
@@ -63,7 +81,7 @@
 
 /* regole header */
 header {
-    padding: 0 10px;
+    height: 80px;
 }
 
 header .container {
@@ -96,12 +114,43 @@ header nav.left {
 
 /* regole jumbotron */
 #jumbotron {
+    height: 600px;
     background-color: rgb(180, 208,	231);
+    padding-top: 60px;
 }
 
 #jumbotron .container {
     width: 80%;
     margin: 0 auto;
+}
+
+#jumbotron h1{
+    margin-bottom: 30px;
+}
+
+#jumbotron .txt {
+    float: left;
+    height: 270px;
+    width: 30%;
+    margin-right: 10%;
+}
+
+#jumbotron p {
+    margin-bottom: 20px;
+}
+
+#jumbotron .btn {
+    margin-bottom: 5px;
+}
+
+#jumbotron .note {
+    margin-bottom: 20px;
+}
+
+#jumbotron .img {
+    float: right;
+    height: 320px;
+    width: 60%;
 }
 /* fine regole jumbotron */
 
