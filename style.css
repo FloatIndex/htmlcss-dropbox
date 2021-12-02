@@ -13,39 +13,47 @@
     height: 500px;
 }
 
-header.debug {
-    height: 100px;
-}
-
 .container {
     height: 100%;
     width: 100%;
     border: 5px solid black;
 }
 
-#piani .container {
-    border-color: rgb(0, 119, 255);
-}
+    /* header */
+    header.debug {
+        height: 100px;
+    }
 
-#features .container {
-    border-color: rgb(98, 0, 255);
-}
+    header nav.right, header nav.left {
+        background-color: blue;
+        color: white;
+    }
 
-#clients {
-    background-color: rgb(98, 9, 43);
-}
+    /* main */
+    #piani .container {
+        border-color: rgb(0, 119, 255);
+    }
 
-#cta .container {
-    border-color: rgb(98, 9, 43);
-}
+    #features .container {
+        border-color: rgb(98, 0, 255);
+    }
 
-#faq .container {
-    border-color: rgb(255, 0, 179);
-}
+    #clients {
+        background-color: rgb(98, 9, 43);
+    }
 
-footer .container {
-    border-color: white;
-}
+    #cta .container {
+        border-color: rgb(98, 9, 43);
+    }
+
+    #faq .container {
+        border-color: rgb(255, 0, 179);
+    }
+
+    /* footer */
+    footer .container {
+        border-color: white;
+    }
 /* fine debug */
 
 
@@ -58,6 +66,26 @@ header {
 header .container {
     width: 98%;
     margin: 0 auto;
+}
+
+header .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header nav.right, header nav.left {
+     width: 50%;
+     height: 100%;   
+}
+
+header nav.right {
+    float: right;
+    text-align: right;
+}
+
+header nav.left {
+    float: left;
 }
 /* fine regole header */
 
