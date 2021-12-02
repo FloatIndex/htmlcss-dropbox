@@ -90,6 +90,10 @@ a {
     #features .container {
         border-color: rgb(98, 0, 255);
     }
+
+    #features .img {
+        background-color: powderblue;
+    }
     /* ****************** */
     #clients {
         background-color: rgb(98, 9, 43);
@@ -203,7 +207,7 @@ main .container {
     float: left;
 }
 
-#standard {
+#plans .column.middle {
     margin: 0 10%;
 }
 
@@ -234,6 +238,31 @@ main .container {
     margin: 20px 0;
 }
 
+/* section features */
+#features .container {
+    padding-top: 100px;
+}
+
+#features .row {
+    margin-top: 50px;
+}
+
+#features .column {
+    width: calc(80% / 3);
+    float: left;
+}
+
+#features .column.middle {
+    margin: 0 10%;
+}
+
+#features .img {
+    height: 150px;
+}
+
+#features h3 {
+    margin: 20px 0;;
+}
 /* fine regole main */
 
 
