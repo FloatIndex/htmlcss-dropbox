@@ -9,10 +9,18 @@
 
 
 /* regole comuni */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 a {
     display: inline-block;
 }
 /* fine regole comuni */
+
+
 
 /* debug */
 .debug {
@@ -51,22 +59,36 @@ a {
     }
 
     /* main */
-    #piani .container {
+    #plans .container {
         border-color: rgb(0, 119, 255);
     }
 
+    #plans .container h2 {
+        height: 70px;
+        width: 100%;
+        background-color: peru;
+    }
+
+    #plans .column {
+        background-color: peachpuff;
+    }
+
+    #enterprise {
+        background-color: rgb(255, 186, 125);
+    }
+    /* ****************** */
     #features .container {
         border-color: rgb(98, 0, 255);
     }
-
+    /* ****************** */
     #clients {
         background-color: rgb(98, 9, 43);
     }
-
+    /* ****************** */
     #cta .container {
         border-color: rgb(98, 9, 43);
     }
-
+    /* ****************** */
     #faq .container {
         border-color: rgb(255, 0, 179);
     }
@@ -87,12 +109,6 @@ header {
 header .container {
     width: 98%;
     margin: 0 auto;
-}
-
-header .row::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 header nav.right, header nav.left {
@@ -160,7 +176,29 @@ header nav.left {
 main .container {
     width: 65%;
     margin: 0 auto;
+    padding-top: 200px;
 }
+
+#plans .container h2{
+    margin-bottom: 50px;
+}
+
+#plans .column {
+    height: 1000px;
+    width: calc(80% / 3);
+    float: left;
+}
+
+#standard {
+    margin: 0 10%;
+}
+
+#enterprise {
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+}
+/*  */
 /* fine regole main */
 
 
