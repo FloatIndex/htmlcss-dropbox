@@ -100,8 +100,9 @@ a {
         background-color: rgb(98, 9, 43);
     }
     /* ****************** */
-    #cta .container {
-        border-color: rgb(98, 9, 43);
+    #cta .btn {
+        height: 30px;
+        border: 1px solid black;
     }
     /* ****************** */
     #faq .container {
@@ -273,6 +274,39 @@ main .container {
 #clients h2 {
     width: 50%;
     margin-bottom: 30px;
+}
+
+#clients .display {
+    height: 500px;
+}
+
+/* section cta */
+#cta {
+    height: 350px;
+    background-color: rgb(180, 208,	231);
+}
+
+#cta .container {
+    height: 100%;
+    position: relative;
+}
+
+#cta .wrap {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#cta h2 {
+    width: 50%;
+    display: inline-block;
+}
+
+#cta .btn {
+    width: 30%;
+    display: inline-block;
+    float: right;
 }
 /* fine regole main */
 
