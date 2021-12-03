@@ -95,9 +95,12 @@ a {
         background-color: powderblue;
     }
     /* ****************** */
-    #clients .display{
-        width: 100%;
-        height: 400px;
+    #clients .client-logo {
+        border: 1px solid white;
+    }
+
+    #clients .row {
+        height: 100%;
         background-color: rgb(98, 9, 43);
     }
     /* ****************** */
@@ -270,12 +273,34 @@ main .container {
 
 #clients h2 {
     width: 50%;
-    margin-bottom: 30px;
 }
 
-#clients .display {
-    height: 500px;
+#clients a {
+    margin: 30px 0px;
 }
+
+#clients .column {
+    float: left;
+}
+
+#clients .column.side {
+    width: 30vw;
+}
+
+#clients .column.middle {
+    width: calc(100% - 60vw);
+    height: 30vw;
+    background-color: rgb(246, 245, 245);
+    overflow-y: scroll;
+    padding: 40px;
+}
+
+#clients .client-logo {
+    float: left;
+    width: 15vw;
+    height: 15vw;
+}
+
 
 /* section cta */
 #cta {
