@@ -4,20 +4,116 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+}
 /* fine regole generali */
 
 
 
 /* regole comuni */
+.mb-50px {
+    margin-bottom: 50px;
+}
+
+.mb-40px {
+    margin-bottom: 40px;
+}
+
+.mb-30px {
+    margin-bottom: 30px;
+}
+
+.mb-20px {
+    margin-bottom: 20px;
+}
+
+.mb-10px {
+    margin-bottom: 10px;
+}
+
+.mb-5px {
+    margin-bottom: 5px;
+}
+
+.mt-50px {
+    margin-top: 50px;
+}
+
+.mt-20px {
+    margin-top: 20px;
+}
+
+.pt-200px {
+    padding-top: 200px;
+}
+
+.pt-100px {
+    padding-top: 100px;
+}
+
+.pt-150px {
+    padding-top: 150px;
+}
+
+.pt-60px {
+    padding-top: 60px;
+}
+
+.pt-30px {
+    padding-top: 30px;
+}
+
 .row::after {
     content: "";
     display: table;
     clear: both;
 }
 
+h1 {
+    font-size: 4.5em;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 a {
     display: inline-block;
+    text-decoration: none;
+    color: inherit;
 }
+
+.btn {
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.btn.large {
+    padding: 5px 30px;
+}
+
+.btn.white {
+    border: 1px solid black;
+}
+
+.btn.blue {
+    background-color: rgb(1, 97, 255);
+    color: #fff;
+}
+
+
 /* fine regole comuni */
 
 
@@ -29,64 +125,11 @@ a {
 
 .container {
     width: 100%;
-    border-left: 4px solid black;
-    border-right: 4px solid black;
+    /* border-left: 2px solid black;
+    border-right: 2px solid black; */
 }
 
-    /* header */
-    header nav.right, header nav.left {
-        background-color: blue;
-    }
-
-    header a {
-        color: white;
-    }
-
-    /* jumbotron */
-    #jumbotron h1 {
-        height: 180px;
-        background-color: grey;
-    }
-
-    #jumbotron .txt, #jumbotron .img {
-        background-color: grey;
-    }
-
-    #jumbotron .btn {
-        width: 150px;
-        height: 30px;
-        background-color: blue;
-    }
-
     /* main */
-    #plans .container {
-        border-color: rgb(0, 119, 255);
-    }
-
-    #plans .container h2 {
-        height: 70px;
-        width: 100%;
-        background-color: peru;
-    }
-
-    #plans .column {
-        background-color: peachpuff;
-    }
-
-    #enterprise {
-        background-color: rgb(255, 186, 125);
-    }
-    /* ****************** */
-    #partner .btn {
-        width: 100px;
-        height: 20px;
-        border: 1px solid black;
-    }
-
-    #partner .txt, #partner .img {
-        background-color: grey;
-    }
-    /* ****************** */
     #features .container {
         border-color: rgb(98, 0, 255);
     }
@@ -120,16 +163,32 @@ a {
 /* regole header */
 header {
     height: 80px;
+    position: relative;
 }
 
-header .container {
-    width: 98%;
-    margin: 0 auto;
+header .row {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 header nav.right, header nav.left {
      width: 50%;
-     height: 100%;   
+}
+
+header nav ul {
+    list-style-type: none; 
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+header nav.left a img {
+    width: 110px;
+    /* vertical-align: middle; */
 }
 
 header nav.right {
@@ -148,7 +207,6 @@ header nav.left {
 #jumbotron {
     height: 600px;
     background-color: rgb(180, 208,	231);
-    padding-top: 60px;
 }
 
 #jumbotron .container {
@@ -157,32 +215,33 @@ header nav.left {
 }
 
 #jumbotron h1{
-    margin-bottom: 30px;
+    height: 180px;
 }
 
-#jumbotron .txt {
+#jumbotron .txt-content {
     float: left;
     height: 270px;
-    width: 30%;
-    margin-right: 10%;
+    width: 35%;
 }
 
-#jumbotron p {
-    margin-bottom: 20px;
+#jumbotron .arrow {
+    font-size: 2em;
 }
 
-#jumbotron .btn {
-    margin-bottom: 5px;
-}
-
-#jumbotron .note {
-    margin-bottom: 20px;
-}
-
-#jumbotron .img {
+#jumbotron .img-box {
     float: right;
     height: 330px;
     width: 60%;
+    /* position: relative; */
+    /* background-color: red; */
+}
+
+#jumbotron .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* position: absolute;
+    bottom: -50px; */
 }
 /* fine regole jumbotron */
 
@@ -195,75 +254,109 @@ main .container {
 }
 
 /* section plans */
-#plans .container {
-    padding-top: 200px;
+#plans .select {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
 }
 
-#plans .container h2{
-    margin-bottom: 50px;
+#plans .select.blue {
+    border: 5px solid rgb(1, 97, 255);
+}
+
+#plans .select.white {
+    border: 1px solid #ddd;
+    margin-left: 20px;
+}
+
+#plans .plan {
+    border: 1px solid #ddd;
+}
+
+#plans .plan .plan-header {
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#plans .plan .plan-body {
+    padding: 20px;
 }
 
 #plans .column {
     height: 1000px;
-    width: calc(80% / 3);
+    width: calc(90% / 3);
     float: left;
 }
 
 #plans .column.middle {
-    margin: 0 10%;
+    margin: 0 5%;
 }
 
-#enterprise {
-    width: 100%;
-    height: 200px;
-    margin-top: 50px;
+#plans .column .plan-body .grey {
+    color: rgb(124, 124, 124);
 }
 
-/* section partner */
-#partner .container {
-    padding-top: 150px;
+#plans .column .plan-body .blue-link {
+    text-decoration: underline;
+    color: rgb(1, 97, 255);
 }
 
-#partner .img {
-    width: 55%;
-    height: 350px;
+#plans .column .plan-body .hr {
+    width: 50px;
+    border-bottom: 1px solid #ddd;
+}
+
+#plans .column .plan-body ul {
+    list-style: none;
+}
+
+#plans .column .plan-body ul li .fas.fa-check{
+    color: rgb(1, 97, 255);
+}
+
+#plans .flat .plan-body .txt{
+    width: 70%;
     float: left;
 }
 
-#partner .txt {
-    width: 35%;
+#plans .flat .plan-body .btn{
+    width: 30%;
     float: right;
-    padding-top: 25px;
 }
 
-#partner .txt p {
-    margin: 20px 0;
+/* section partner */
+#partner .img-box {
+    width: 55%;
+    float: left;
+}
+
+#partner .img-box img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#partner .txt {
+    width: 40%;
+    float: right;
 }
 
 /* section features */
-#features .container {
-    padding-top: 100px;
-}
-
-#features .row {
-    margin-top: 50px;
-}
-
 #features .column {
-    width: calc(80% / 3);
+    width: calc(90% / 3);
     float: left;
 }
 
 #features .column.middle {
-    margin: 0 10%;
+    margin: 0 5%;
 }
 
-#features .img {
-    height: 150px;
-}
-
-#features h3 {
-    margin: 20px 0;;
+#features .img-box img {
+    width: 100%;
+    object-fit: contain;
 }
 
 /* section clients */
@@ -327,7 +420,6 @@ main .container {
 
 #cta .btn {
     width: 30%;
-    display: inline-block;
     float: right;
 }
 
