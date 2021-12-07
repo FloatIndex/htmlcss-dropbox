@@ -115,6 +115,7 @@ a.blue-link {
 
 .btn.white {
     border: 1px solid black;
+    background-color: #fff;
 }
 
 .btn.blue {
@@ -143,12 +144,6 @@ a.blue-link {
     border-right: 2px solid black; */
 }
 
-    /* main */
-    #cta .btn {
-        height: 30px;
-        border: 1px solid black;
-    }
-    
     /* footer */
     footer .container {
         border: 1px solid white;
@@ -441,12 +436,14 @@ main .container {
 
 #cta h2 {
     width: 50%;
-    display: inline-block;
+    float: left;
+    color: rgb(99, 8, 43);
 }
 
 #cta .btn {
     width: 30%;
     float: right;
+    border: none;
 }
 
 /* section faq */
