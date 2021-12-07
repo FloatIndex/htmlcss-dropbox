@@ -42,6 +42,10 @@ html {
     margin-top: 50px;
 }
 
+.mt-30px {
+    margin-top: 30px;
+}
+
 .mt-20px {
     margin-top: 20px;
 }
@@ -95,6 +99,11 @@ a {
     color: inherit;
 }
 
+a.blue-link {
+    text-decoration: underline;
+    color: rgb(1, 97, 255);
+}
+
 .btn {
     padding: 5px 15px;
     text-align: center;
@@ -111,6 +120,11 @@ a {
 .btn.blue {
     background-color: rgb(1, 97, 255);
     color: #fff;
+}
+
+.hr {
+    width: 50px;
+    border-bottom: 1px solid #ddd;
 }
 
 
@@ -130,23 +144,6 @@ a {
 }
 
     /* main */
-    #features .container {
-        border-color: rgb(98, 0, 255);
-    }
-
-    #features .img {
-        background-color: powderblue;
-    }
-    /* ****************** */
-    #clients .client-logo {
-        border: 1px solid white;
-    }
-
-    #clients .row {
-        height: 100%;
-        background-color: rgb(98, 9, 43);
-    }
-    /* ****************** */
     #cta .btn {
         height: 30px;
         border: 1px solid black;
@@ -300,16 +297,6 @@ main .container {
     color: rgb(124, 124, 124);
 }
 
-#plans .column .plan-body .blue-link {
-    text-decoration: underline;
-    color: rgb(1, 97, 255);
-}
-
-#plans .column .plan-body .hr {
-    width: 50px;
-    border-bottom: 1px solid #ddd;
-}
-
 #plans .column .plan-body ul {
     list-style: none;
 }
@@ -360,16 +347,8 @@ main .container {
 }
 
 /* section clients */
-#clients .container {
-    padding-top: 200px;
-}
-
 #clients h2 {
-    width: 50%;
-}
-
-#clients a {
-    margin: 30px 0px;
+    width: 55%;
 }
 
 #clients .column {
@@ -388,12 +367,59 @@ main .container {
     padding: 40px;
 }
 
-#clients .client-logo {
+#clients .logo-box {
     float: left;
     width: 15vw;
     height: 15vw;
 }
 
+#clients .logo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0px 50px;
+}
+
+#designit img {
+    background-color: rgb(162, 210, 155);
+}
+
+#designit {
+    background-color: rgb(210, 233, 205);
+    padding: 2%;
+}
+
+#asu {
+    background-color: rgb(99, 8, 43);
+}
+
+#uf {
+    background-color: rgb(0, 147, 206);
+}
+
+#topps {
+    background-color: rgb(255, 29, 28);
+}
+
+#world-bicycle-relief {
+    background-color: rgb(213, 0, 32);
+}
+
+#hearst {
+    background-color: rgb(181, 208, 231);
+}
+
+#lonely-planet {
+    background-color: rgb(15, 36, 129);
+}
+
+#clear-channel {
+    background-color: rgb(255, 215, 47);
+}
+
+#clients .column.middle .client-logo {
+    width: 25%;
+}
 
 /* section cta */
 #cta {
