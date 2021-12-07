@@ -173,11 +173,11 @@ header nav.right, header nav.left {
 header nav ul li {
     display: inline-block;
     margin: 0px 15px;
+    vertical-align: middle;
 }
 
 header nav.left a img {
     width: 110px;
-    /* vertical-align: middle; */
 }
 
 header nav.right {
@@ -471,7 +471,6 @@ main .container {
 
 /* regole footer */
 footer {
-    height: 500px;
     background-color: black;
     color: #fff;
     padding: 100px 17% 40px 10%;
