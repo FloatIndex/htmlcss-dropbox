@@ -154,8 +154,8 @@ a.blue-link {
 
 
 /* regole header */
-header {
-    height: 70px;
+header nav {
+    height: 72px;
 }
 
 header nav.right, header nav.left {
@@ -171,7 +171,7 @@ header nav.left {
     float: left;
 }
 
-header nav.left a .dropbox-logo {
+header nav.left .dropbox-logo {
     width: 110px;
     vertical-align: sub;
 }
@@ -181,8 +181,12 @@ header nav ul li {
     margin: 0px 15px;
 }
 
-header nav ul li.selector {
+header nav ul li.selector{
     line-height: 70px;
+}
+
+header nav ul li.border.selector:hover {
+    border-bottom: 2px solid #000;
 }
 /* fine regole header */
 
@@ -456,6 +460,18 @@ main .container {
 #faq .row .arrow{
     width: 5%;
     right: 0px;
+}
+
+#faq .row p {
+    visibility: hidden;
+}
+
+#faq .row:hover p {
+    visibility: visible;
+}
+
+#faq .row:hover {
+    cursor: pointer;
 }
 /* fine regole main */
 
