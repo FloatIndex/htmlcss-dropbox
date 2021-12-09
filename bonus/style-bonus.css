@@ -562,6 +562,10 @@ footer .column ul li {
     font-size: 0.9em;
 }
 
+footer .column ul a:hover {
+    text-decoration: underline ;
+}
+
 footer .language {
     width: 100px;
     height: 60px;
