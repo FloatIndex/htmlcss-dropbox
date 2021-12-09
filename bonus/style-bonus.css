@@ -14,6 +14,10 @@ html {
 
 
 /* regole comuni */
+.mb-200px {
+    margin-bottom: 200px;
+}
+
 .mb-100px {
     margin-bottom: 100px;
 }
@@ -44,6 +48,10 @@ html {
 
 .mt-100px {
     margin-top: 100px;
+}
+
+.mt-72px {
+    margin-top: 72px;
 }
 
 .mt-50px {
@@ -80,12 +88,6 @@ html {
 
 .pt-30px {
     padding-top: 30px;
-}
-
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 h1 {
@@ -138,9 +140,17 @@ a.blue-link {
     background-color: #fff;
 }
 
+.btn.white:hover {
+    background-color: #ddd;
+}
+
 .btn.blue {
     background-color: rgb(1, 97, 255);
     color: #fff;
+}
+
+.btn.blue:hover {
+    background-color: rgb(82, 149, 255);
 }
 
 .short-hr {
@@ -148,14 +158,30 @@ a.blue-link {
     border-bottom: 1px solid #ddd;
 }
 
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    max-width: 1180px;
+}
 /* fine regole comuni */
 
 
 
 
 /* regole header */
-header nav {
+header {
+    max-width: 1920px;
     height: 72px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
 }
 
 header nav.right, header nav.left {
@@ -187,6 +213,37 @@ header nav ul li.selector{
 
 header nav ul li.border.selector:hover {
     border-bottom: 2px solid #000;
+}
+
+#support {
+    position: relative;
+}
+
+#hidden-menu {
+    visibility: hidden;
+    width: 350%;
+    line-height: 40px;
+    background-color: #fff;
+    position: absolute;
+    margin-top: 2px;
+    border-top: 1px solid #ddd;
+    padding: 15px 0px;
+    left: -20%;
+}
+
+#support:hover #hidden-menu {
+    visibility: visible;
+}
+
+#hidden-menu li {
+    display: block;
+    text-align: left;
+    margin: 0px;
+    padding: 0px 20px;
+}
+
+#hidden-menu li:hover {
+    background-color: #ddd;
 }
 /* fine regole header */
 
@@ -272,7 +329,7 @@ main .container {
 }
 
 #plans .column {
-    height: 1000px;
+    min-height: 1050px;
     width: calc(90% / 3);
     float: left;
 }
@@ -283,6 +340,10 @@ main .container {
 
 #plans .column .plan-body .grey {
     color: rgb(124, 124, 124);
+}
+
+#plans .column .plan-body ul.fa-ul{
+    margin-left: 20px;
 }
 
 #plans .column .plan-body ul li .fas.fa-check{
@@ -331,6 +392,10 @@ main .container {
 }
 
 /* section clients */
+#clients {
+    max-width: 1920px;
+}
+
 #clients h2 {
     width: 55%;
 }
@@ -437,41 +502,41 @@ main .container {
 
 /* section faq */
 #faq .row {
-    position: relative;
     height: 80px;
     border-top: 1px solid lightgray;
+}
+
+#faq .row .wrap {
+    line-height: 80px;
 }
 
 #faq .row:last-child {
     border-bottom: 1px solid lightgray;
 }
 
-#faq .row span {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 #faq .row .question{
     width: 90%;
-    left: 0px;
+    float: left;
 }
 
 #faq .row .arrow{
     width: 5%;
-    right: 0px;
+    float: right;
 }
 
-#faq .row p {
+#faq .row .answer {
+    width: 90%;
     visibility: hidden;
 }
 
-#faq .row:hover p {
-    visibility: visible;
+#faq .row:hover {
+    height: auto;
+    cursor: pointer;
 }
 
-#faq .row:hover {
-    cursor: pointer;
+#faq .row:hover .answer {
+    visibility: visible;
+    margin-bottom: 40px;
 }
 /* fine regole main */
 

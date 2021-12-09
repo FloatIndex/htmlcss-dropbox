@@ -35,7 +35,14 @@
             <!-- menu a destra -->
             <nav class="right">
                 <ul>
-                    <li class="border selector"><a href="#">Supporto</a></li>
+                    <li class="border selector" id="support">
+                        <a href="#">Supporto</a>
+
+                        <ul id="hidden-menu">
+                            <li><a href="#">Centro assistenza</a></li>
+                            <li><a href="#">Forum della community</a></li>
+                        </ul>
+                    </li>
                     <li class="border selector"><a href="#">Contatta l'ufficio vendite</a></li>
                     <li class="border selector"><a href="#">Accedi</a></li>
                     <li><a class="btn blue" href="#">Inizia</a></li>
@@ -51,7 +58,7 @@
 
 
     <!-- jumbotron -->
-    <div id="jumbotron">
+    <div id="jumbotron" class="mt-72px mb-200px">
         <div class="container pt-60px">
             <!-- row clearfix -->
             <div class="row">
@@ -89,7 +96,7 @@
     <main>
         <!-- sezione plans -->
         <section id="plans">
-            <div class="container pt-200px">
+            <div class="container">
 
                 <!-- titolo sezione -->
                 <h2 class="mb-50px">Trova il piano Dropbox Business che fa per te</h2>
@@ -121,19 +128,19 @@
                             <!-- fine titolo, costo, fatturazione -->
 
                             <!-- elenco breve features -->
-                            <ul>
+                            <ul class="fa-ul">
                                 <li class="mb-20px">
-                                    <i class="far fa-user"></i>
+                                    <span class="fa-li"><i class="far fa-user"></i></span>
                                     <span>1 utente</span>
                                 </li>
 
                                 <li class="mb-20px">
-                                    <i class="far fa-folder"></i>
+                                    <span class="fa-li"><i class="far fa-folder"></i></span>
                                     <span>3 TB di spazio di archiviazione sicuro</span>
                                 </li>
 
                                 <li class="mb-50px">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <span class="fa-li"><i class="fas fa-pencil-alt"></i></span>
                                     <span>Funzioni di produttivit&agrave; premium e condivisione file semplice e sicura</span>
                                 </li>
                             </ul>
@@ -148,29 +155,29 @@
                             <div class="short-hr mb-40px"></div>
 
                             <p class="bold mb-20px">Punti salienti del piano</p>
-                            <ul>
+                            <ul class="fa-ul">
                                 <li class="mb-20px">
-                                    <i class="fas fa-check"></i>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
                                     <span>Invia file fino a 100 GB con DropboxTransfert</span>
                                 </li>
 
                                 <li class="mb-20px">
-                                    <i class="fas fa-check"></i>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
                                     <span>Cartelle offline su dispositivi mobili</span>
                                 </li>
 
                                 <li class="mb-20px">
-                                    <i class="fas fa-check"></i>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
                                     <span>Pulizia remota dell'account</span>
                                 </li>
 
                                 <li class="mb-20px">
-                                    <i class="fas fa-check"></i>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
                                     <span>Filigrana documento</span>
                                 </li>
 
                                 <li class="mb-20px">
-                                    <i class="fas fa-check"></i>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
                                     <span>Assistenza prioritaria via email e chat</span>
                                 </li>
                             </ul>
@@ -198,19 +205,19 @@
                             <!-- fine titolo, costo, fatturazione -->
 
                             <!-- elenco breve features -->
-                            <ul>
+                            <ul class="fa-ul">
                                 <li class="mb-20px">
-                                    <i class="fas fa-user-plus"></i>
+                                    <span class="fa-li"><i class="fas fa-user-plus"></i></span>
                                     <span>1 utente</span>
                                 </li>
 
                                 <li class="mb-20px">
-                                    <i class="far fa-folder"></i>
+                                    <span class="fa-li"><i class="far fa-folder"></i></span>
                                     <span>3 TB di spazio di archiviazione sicuro</span>
                                 </li>
 
                                 <li class="mb-50px">
-                                    <i class="far fa-smile"></i>
+                                    <span class="fa-li"><i class="far fa-smile"></i></span>
                                     <span>Funzioni di produttivit&agrave; premium e condivisione file semplice e sicura</span>
                                 </li>
                             </ul>
@@ -225,34 +232,34 @@
                             <div class="short-hr mb-40px"></div>
 
                             <p class="bold mb-20px">Punti salienti del piano</p>
-                            <ul>
+                            <ul class="fa-ul">
                                 <li class="mb-20px">
-                                    <i class="fas fa-check"></i>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
                                     <span>Invia file fino a 100 GB con DropboxTransfert</span>
                                 </li>
 
                                 <li class="mb-20px">
-                                    <i class="fas fa-check"></i>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
                                     <span>Cartelle offline su dispositivi mobili</span>
                                 </li>
 
                                 <li class="mb-20px">
-                                    <i class="fas fa-check"></i>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
                                     <span>Pulizia remota dell'account</span>
                                 </li>
 
                                 <li class="mb-20px">
-                                    <i class="fas fa-check"></i>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
                                     <span>Filigrana documento</span>
                                 </li>
 
                                 <li class="mb-20px">
-                                    <i class="fas fa-check"></i>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
                                     <span>Assistenza prioritaria via email e chat</span>
                                 </li>
 
                                 <li class="mb-20px">
-                                    <i class="fas fa-check"></i>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
                                     <span>Assistenza prioritaria via email e chat</span>
                                 </li>
                             </ul>
@@ -280,19 +287,19 @@
                             <!-- fine titolo, costo, fatturazione -->
 
                             <!-- elenco breve features -->
-                            <ul>
+                            <ul class="fa-ul">
                                 <li class="mb-20px">
-                                    <i class="fas fa-user-plus"></i>
+                                    <span class="fa-li"><i class="fas fa-user-plus"></i></span>
                                     <span>1 utente</span>
                                 </li>
 
                                 <li class="mb-20px">
-                                    <i class="far fa-smile"></i>
+                                    <span class="fa-li"><i class="far fa-smile"></i></span>
                                     <span>3 TB di spazio di archiviazione sicuro</span>
                                 </li>
 
                                 <li class="mb-50px">
-                                    <i class="fas fa-pencil-alt"></i>
+                                    <span class="fa-li"><i class="fas fa-pencil-alt"></i></span>
                                     <span>Funzioni di produttivit&agrave; premium e condivisione file semplice e sicura</span>
                                 </li>
                             </ul>
@@ -307,34 +314,34 @@
                             <div class="short-hr mb-40px"></div>
 
                             <p class="bold mb-20px">Punti salienti del piano</p>
-                            <ul>
+                            <ul class="fa-ul">
                                 <li class="mb-20px">
-                                    <i class="fas fa-check"></i>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
                                     <span>Invia file fino a 100 GB con DropboxTransfert</span>
                                 </li>
 
                                 <li class="mb-20px">
-                                    <i class="fas fa-check"></i>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
                                     <span>Cartelle offline su dispositivi mobili</span>
                                 </li>
 
                                 <li class="mb-20px">
-                                    <i class="fas fa-check"></i>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
                                     <span>Pulizia remota dell'account</span>
                                 </li>
 
                                 <li class="mb-20px">
-                                    <i class="fas fa-check"></i>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
                                     <span>Filigrana documento</span>
                                 </li>
 
                                 <li class="mb-20px">
-                                    <i class="fas fa-check"></i>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
                                     <span>Assistenza prioritaria via email e chat</span>
                                 </li>
 
                                 <li class="mb-20px">
-                                    <i class="fas fa-check"></i>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
                                     <span>Assistenza prioritaria via email e chat</span>
                                 </li>
                             </ul>
@@ -644,33 +651,65 @@
                 
                 <!-- prima domanda -->
                 <div class="row">
-                    <span class="question bold">Qual &egrave; la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
-
-                    <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                    <div class="wrap">
+                        <span class="question bold">Qual &egrave; la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
+                    
+                        <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <!-- risposta nascosta -->
+                    <p class="answer">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis praesentium voluptatum reiciendis expedita quia eius deserunt maiores amet ab minus odio sunt voluptas, eum quam error porro velit ratione fugit?
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet reiciendis illum quaerat rem quasi optio provident, necessitatibus eos nobis voluptate, dolorem beatae eaque itaque facere veniam qui pariatur et.
+                    </p>
+                    <!-- fine risposta nascosta -->
                 </div>
                 <!-- fine prima domanda -->
 
                 <!-- seconda domanda -->
                 <div class="row">
-                    <span class="question bold">Qual &egrave; la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
-
-                    <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                    <div class="wrap">
+                        <span class="question bold">Qual &egrave; la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
+                    
+                        <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <!-- risposta nascosta -->
+                    <p class="answer">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis praesentium voluptatum reiciendis expedita quia eius deserunt maiores amet ab minus odio sunt voluptas, eum quam error porro velit ratione fugit?
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet reiciendis illum quaerat rem quasi optio provident, necessitatibus eos nobis voluptate, dolorem beatae eaque itaque facere veniam qui pariatur et.
+                    </p>
+                    <!-- fine risposta nascosta -->
                 </div>
                 <!-- fine seconda domanda -->
 
                 <!-- terza domanda -->
                 <div class="row">
-                    <span class="question bold">Qual &egrave; la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
-
-                    <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                    <div class="wrap">
+                        <span class="question bold">Qual &egrave; la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
+                    
+                        <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <!-- risposta nascosta -->
+                    <p class="answer">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis praesentium voluptatum reiciendis expedita quia eius deserunt maiores amet ab minus odio sunt voluptas, eum quam error porro velit ratione fugit?
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet reiciendis illum quaerat rem quasi optio provident, necessitatibus eos nobis voluptate, dolorem beatae eaque itaque facere veniam qui pariatur et.
+                    </p>
+                    <!-- fine risposta nascosta -->
                 </div>
                 <!-- fine terza domanda -->
 
                 <!-- quarta domanda -->
                 <div class="row">
-                    <span class="question bold">Qual &egrave; la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
-
-                    <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                    <div class="wrap">
+                        <span class="question bold">Qual &egrave; la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
+                    
+                        <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <!-- risposta nascosta -->
+                    <p class="answer">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis praesentium voluptatum reiciendis expedita quia eius deserunt maiores amet ab minus odio sunt voluptas, eum quam error porro velit ratione fugit?
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet reiciendis illum quaerat rem quasi optio provident, necessitatibus eos nobis voluptate, dolorem beatae eaque itaque facere veniam qui pariatur et.
+                    </p>
+                    <!-- fine risposta nascosta -->
                 </div>
                 <!-- fine quarta domanda -->
 
@@ -772,8 +811,7 @@
             <!-- sezione lingua -->
             <div class="language pt-40px">
                 <i class="fas fa-globe-americas"></i>
-                <span>Italiano</span>
-                <a href="#"><i class="fas fa-sort-up"></i></a>
+                <a href="#">Italiano <i class="fas fa-sort-up"></i></a>
             </div>
             <!-- fine sezione lingua -->
         </div>
